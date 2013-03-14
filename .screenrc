@@ -7,3 +7,4 @@ hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %m/%d %c"
 termcapinfo xterm 'bc@:bs@'
 ignorecase on
 maptimeout 0
+vbell off
