@@ -8,3 +8,4 @@ termcapinfo xterm 'bc@:bs@'
 ignorecase on
 maptimeout 0
 vbell off
+altscreen off
