@@ -1,3 +1,10 @@
 #!/bin/bash
 
-ln -s $(dirname $(readlink -f $0))/.screenrc ~/.screenrc
+if [[ $OSTYPE == darwin* ]]; then
+    dir=$(dirname $0)
+    path=$PWD${dir:1}
+else
+    path=$(dirname $(readlink -f $0))
+fi
+
+ln -sf "$path"/.screenrc ~/.screenrc
